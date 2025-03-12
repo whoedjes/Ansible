@@ -1,6 +1,6 @@
 ---
 - name: Configure important user consistently
-  hosts: DESKTOP-R8QH2VQ
+  hosts: ALL
   tasks:
     - name: Newbie exists with UID 4000
       ansible.builtin.user:
