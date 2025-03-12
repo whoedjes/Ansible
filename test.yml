@@ -1,6 +1,6 @@
 ---
 - name: Configure important user consistently
-  hosts: ALL
+  # hosts: ALL
   vars:
      ansible_connection: winrm
      ansible_port: 5985
