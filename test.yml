@@ -2,10 +2,10 @@
 - name: Configure important user consistently
   hosts: ALL
   vars:
-     - ansible_connection: winrm
-     - ansible_port: 5985
-     - ansible_winrm_server_cert_validation: ignore
-     - ansible_winrm_transport: CredSSP
+     ansible_connection: winrm
+     ansible_port: 5985
+     ansible_winrm_server_cert_validation: ignore
+     ansible_winrm_transport: CredSSP
   tasks:
     - name: Newbie exists with UID 4000
       ansible.builtin.user:
